@@ -91,7 +91,7 @@ export class ReflectiveShadowMap {
     /**
      * Gets or sets a boolean indicating if the light parameters should be recomputed even if the light parameters (position, direction) did not change.
      * You should not set this value to true, except for debugging purpose (if you want to see changes from the inspector, for eg).
-     * Instead, you should call updateLightParameters() explicitely at the right time (once the light parameters changed).
+     * Instead, you should call updateLightParameters() explicitly at the right time (once the light parameters changed).
      */
     public forceUpdateLightParameters = false;
 
@@ -448,7 +448,7 @@ export class RSMCreatePluginMaterial extends MaterialPluginBase {
                   CUSTOM_FRAGMENT_DEFINITIONS: `
                 #ifdef RSMCREATE
                     #ifdef RSMCREATE_PROJTEXTURE
-                        uniform highp sampler2D rsmTextureProjectionSampler;                    
+                        uniform highp sampler2D rsmTextureProjectionSampler;
                     #endif
                     layout(location = 0) out highp vec4 glFragData[3];
                     vec4 glFragColor;

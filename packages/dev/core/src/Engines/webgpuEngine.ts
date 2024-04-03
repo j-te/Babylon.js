@@ -138,13 +138,13 @@ export interface WebGPUEngineOptions extends ThinEngineOptions, GPURequestAdapte
 
     /**
      * When requesting the device, enable all the features supported by the adapter. Default: false
-     * Note that this setting is ignored if you explicitely set deviceDescriptor.requiredFeatures
+     * Note that this setting is ignored if you explicitly set deviceDescriptor.requiredFeatures
      */
     enableAllFeatures?: boolean;
 
     /**
      * When requesting the device, set the required limits to the maximum possible values (the ones from adapter.limits). Default: false
-     * Note that this setting is ignored if you explicitely set deviceDescriptor.requiredLimits
+     * Note that this setting is ignored if you explicitly set deviceDescriptor.requiredLimits
      */
     setMaximumLimits?: boolean;
 
